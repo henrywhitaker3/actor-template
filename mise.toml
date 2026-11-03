@@ -51,5 +51,5 @@ arg "<module>" help="The name of the new module"
 '''
 run = """
 find . -name "*.go" -type f | xargs -I {} sed -i '' 's~"github.com/henrywhitaker3/actor-template~"{{ usage.module }}~g' {}
-sed -i '' 's~"github.com/henrywhitaker3/actor-template~"{{ usage.module }}~g' go.mod
+sed -i '' 's~github.com/henrywhitaker3/actor-template~{{ usage.module }}~g' go.mod
 """
