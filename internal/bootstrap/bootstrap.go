@@ -8,9 +8,9 @@ import (
 	"net"
 	"os"
 
-	"git.plexmox.com/henry/gater/internal/api"
-	"git.plexmox.com/henry/gater/internal/config"
-	"git.plexmox.com/henry/gater/internal/database"
+	"github.com/henrywhitaker3/actor-template/internal/api"
+	"github.com/henrywhitaker3/actor-template/internal/config"
+	"github.com/henrywhitaker3/actor-template/internal/database"
 	"github.com/henrywhitaker3/windowframe/v2/http"
 	"github.com/henrywhitaker3/windowframe/v2/log"
 	"github.com/henrywhitaker3/windowframe/v2/otel"

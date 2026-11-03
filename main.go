@@ -7,9 +7,9 @@ import (
 	"os/signal"
 	"time"
 
-	"git.plexmox.com/henry/gater/internal/api"
-	"git.plexmox.com/henry/gater/internal/bootstrap"
-	"git.plexmox.com/henry/gater/internal/meta"
+	"github.com/henrywhitaker3/actor-template/internal/api"
+	"github.com/henrywhitaker3/actor-template/internal/bootstrap"
+	"github.com/henrywhitaker3/actor-template/internal/meta"
 )
 
 var version = "dev"

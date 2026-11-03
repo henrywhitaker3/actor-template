@@ -1,4 +1,4 @@
-module git.plexmox.com/henry/gater
+module github.com/henrywhitaker3/actor-template
 
 go 1.27.3
 

@@ -43,3 +43,13 @@ run = [
 description = "Release a new version of the app"
 shell = "/bin/bash"
 run = "./hack/release.sh"
+
+[tasks.rename]
+description = "Rename to go module"
+usage = '''
+arg "<module>" help="The name of the new module"
+'''
+run = """
+find . -name "*.go" -type f | xargs -I {} sed -i '' 's~"github.com/henrywhitaker3/actor-template~"{{ usage.module }}~g' {}
+sed -i '' 's~"github.com/henrywhitaker3/actor-template~"{{ usage.module }}~g' go.mod
+"""
