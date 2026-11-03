@@ -20,5 +20,11 @@ func Gorm(t testing.TB, r ...bootstrap.RegisterModel) *gorm.DB {
 		require.Nil(t, r(db))
 	}
 
+	t.Cleanup(func() {
+		ddb, err := db.DB()
+		require.Nil(t, err)
+		require.Nil(t, ddb.Close())
+	})
+
 	return db
 }

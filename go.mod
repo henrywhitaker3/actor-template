@@ -3,7 +3,7 @@ module github.com/henrywhitaker3/actor-template
 go 1.27.3
 
 require (
-	github.com/henrywhitaker3/windowframe/v2 v2.7.1
+	github.com/henrywhitaker3/windowframe/v2 v2.7.2
 	github.com/italypaleale/francis v0.2.1
 	github.com/joho/godotenv v1.5.1
 	github.com/orandin/slog-gorm v1.4.0
