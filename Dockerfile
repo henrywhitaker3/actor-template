@@ -1,4 +1,4 @@
-FROM --platform=$BUILDPLATFORM golang:1.27.3 AS gob
+FROM --platform=$BUILDPLATFORM golang:1.27.4 AS gob
 
 ARG VERSION="unknown"
 
